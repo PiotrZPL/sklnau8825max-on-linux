@@ -113,3 +113,10 @@ Normally install one of supported operating systems. Nothing fancy here.
 > sudo dpkg -i ./*.deb
 > ```
 > #### 8. Follow 2nd way from the 3rd step
+
+## Troubleshooting
+If, after rebooting, the audio still does not work, go to your audio mixer/volume control and open `Configuration` tab. From there, find `Built-in Audio` and change your profile to `Speakers`.
+<br>
+![Configuretion tab](img/speakers.png)
+<br>
+If your audio still does not work, [open an issue in this repository](https://github.com/PiotrZPL/sklnau8825max-on-linux/issues/new) and describe your problem.
