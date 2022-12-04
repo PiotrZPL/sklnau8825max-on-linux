@@ -29,7 +29,7 @@
 - basic command line knowledge
 
 ### Firmware installation
-Install [MrChromebox's UEFI firmware](https://mrchromebox.tech/) on your device
+Install [MrChromebox's UEFI firmware](https://mrchromebox.tech/) on your device.
 <br>Warning!
 <br>This will void your warranty and may brick your device!
 
@@ -46,6 +46,7 @@ Normally install one of supported operating systems. Nothing fancy here.
 > ```
 > sudo ./script.sh
 > ```
+> #### 3. Reboot
 
 ### 2nd way - slower and still insecure
 > #### 1. Clone the repository and enter it
@@ -77,3 +78,4 @@ Normally install one of supported operating systems. Nothing fancy here.
 > sudo cp ./fs/etc/acpi/events/* /etc/acpi/events/
 > sudo chmod +r /etc/acpi/events/{plugheadphone,plugheadset,unplugheadphone}
 > ```
+> #### 7. Reboot
