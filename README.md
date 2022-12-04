@@ -79,3 +79,37 @@ Normally install one of supported operating systems. Nothing fancy here.
 > sudo chmod +r /etc/acpi/events/{plugheadphone,plugheadset,unplugheadphone}
 > ```
 > #### 7. Reboot
+
+### 3rd way - requiring a lot of time but secure
+> #### 1. Clone the repository and enter it
+> ```
+> git clone https://github.com/PiotrZPL/sklnau8825max-on-linux.git
+> cd sklnau8825max-on-linux
+> ```
+> #### 2. Install kernel build dependencies
+> ```
+> sudo apt install libc6-dev ncurses-dev gcc make binutils elfutils flex bison devscripts libssl-dev python-pytest
+> ```
+> #### 3. Download Linux kernel 5.10.x from [here](kernel.org) and verify your checksum
+> #### 4. Unpack kernel (replace ```x``` with your kernel version)
+> ```
+> tar -Jxvf linux-5.10.x.tar.xz
+> ```
+> #### 5. Copy the config file from the repository
+> ```
+> cp src/kernel-config linux-5.10.x/.config
+> ```
+> #### 6. Build the kernel from source
+> ```
+> cd linux-5.10.x
+> make oldconfig
+> make testconfig
+> make -j2 bindeb-pkg
+> ```
+> This step will take a lot of time on a chromebook. Consider doing it on a more powerful computer and copying files to your chromebook.
+> #### 7. Install created packages
+> ```
+> cd ..
+> sudo dpkg -i ./*.deb
+> ```
+> #### 8. Follow 2nd way from the 3rd step
