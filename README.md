@@ -21,6 +21,16 @@
 - Ubuntu 22.04
 - Debian 11
 
+## Supported kernels
+
+### Tested and working:
+- Linux kernel 5.10.157
+
+### Tested and not working:
+- Linux kernel 5.15.81
+
+I think the compatibility was broken somewhere between Linux kernel 5.10 and 5.15. I did not have time to investigate. If someone is able to do the investigation, please let me know the results.
+
 ## Guide
 
 ### Prerequisites:
