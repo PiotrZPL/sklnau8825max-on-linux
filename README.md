@@ -2,6 +2,9 @@
 
 ### This guide will present ways of getting the sklnau8825max sound card to work under the mainline Linux kernel
 
+> [!NOTE]  
+> A new and possibly better solution was presented in the [2024 update](#2024-update) section.
+
 ## Supported devices
 
 ### Tested and working:
@@ -130,6 +133,12 @@ If, after rebooting, the audio still does not work, go to your audio mixer/volum
 ![Configuretion tab](img/speakers.png)
 <br>
 If your audio still does not work, [open an issue in this repository](https://github.com/PiotrZPL/sklnau8825max-on-linux/issues/new) and describe your problem.
+
+## 2024 update
+> [!CAUTION]  
+> Using the method described below can lead to permanent damage to the speaker hardware!
+
+[WeirdTreeThing](https://github.com/WeirdTreeThing) has developed a way to get sklnau8825max to work on modern Linux distributions with recent kernel versions. It is available [here](https://github.com/WeirdTreeThing/chromebook-linux-audio). In 2024, I would recommend using WeirdTreeThing's solution instead of mine. However, be mindful that raising the volume of the speakers too much can lead to hardware damage.
 
 ## Credits
 The creation of this repository would not have been possible without:
